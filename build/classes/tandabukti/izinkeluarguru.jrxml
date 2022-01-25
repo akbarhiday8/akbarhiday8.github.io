@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="354" pageHeight="249" orientation="Landscape" columnWidth="314" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c9fc8551-f560-4395-9ec2-6e30d29ba994">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="No_Izin_Guru" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select*from izinkeluarguru where noizinguru = $P{No_Izin_Guru}]]>
+	</queryString>
+	<field name="noizinguru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nip" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nm_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jk_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telp_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alasan_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tglizin_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jamizin_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jamkem_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ket_guru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="5c52ca66-72ec-4f28-af0c-5f2da100574b" mode="Opaque" x="-20" y="-20" width="355" height="92" backcolor="#3399FF"/>
+				<staticText>
+					<reportElement uuid="c2e0c794-51bb-495c-a7e9-8373c13971fc" x="111" y="17" width="175" height="23" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="true" isUnderline="true"/>
+					</textElement>
+					<text><![CDATA[SMKN 8 JAKARTA]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="61eaad2f-84d5-4654-b584-c05bd3a33568" x="76" y="43" width="229" height="49" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12" isBold="false" isItalic="true" isUnderline="false"/>
+					</textElement>
+					<text><![CDATA[Selamat Datang di Resepsionis SMKN 8 Jakarta
+Kami Berkualitas dan Dipercaya]]></text>
+				</staticText>
+				<image scaleImage="RetainShape" hAlign="Center">
+					<reportElement uuid="b2e5883b-83c4-48b6-a6b2-2dda19aaa23f" x="83" y="10" width="40" height="33"/>
+					<imageExpression><![CDATA["C:\\Users\\Akbar\\Documents\\NetBeansProjects\\Resepsionis SMKN8 Jakarta\\src\\gambar\\1557625794079 (1).png"]]></imageExpression>
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="107">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="ca5ad722-9c47-4518-bd80-661f9e9a53fb" mode="Opaque" x="136" y="0" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{noizinguru}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="29b77e34-fc9f-46b0-9df2-269542270715" mode="Opaque" x="136" y="17" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nm_guru}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6bfb6b09-ee84-4fd0-8a85-eb0e0bbafcb4" mode="Opaque" x="0" y="17" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama Guru]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="66835839-0b54-4a61-97b2-3da9f20d628c" mode="Opaque" x="0" y="0" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Izin Guru]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6bfb6b09-ee84-4fd0-8a85-eb0e0bbafcb4" mode="Opaque" x="0" y="34" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alasan Izin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c8080526-909c-4a12-a1c4-6e84f43a9dde" mode="Opaque" x="136" y="34" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alasan_guru}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6bfb6b09-ee84-4fd0-8a85-eb0e0bbafcb4" mode="Opaque" x="0" y="51" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal Izin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="9a317021-a088-4c71-926c-4245b1b5cad4" mode="Opaque" x="136" y="51" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tglizin_guru}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6bfb6b09-ee84-4fd0-8a85-eb0e0bbafcb4" mode="Opaque" x="0" y="68" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jam Izin]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="15e5f781-7686-4ad9-a68f-b59a21509ab9" mode="Opaque" x="136" y="68" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jamizin_guru}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="6bfb6b09-ee84-4fd0-8a85-eb0e0bbafcb4" mode="Opaque" x="0" y="85" width="136" height="17" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jam Kembali]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="b555feaf-898c-484e-b259-0b7ce6a6e2f4" mode="Opaque" x="136" y="85" width="178" height="17" backcolor="#E6E6E6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jamkem_guru}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20"/>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<staticText>
+				<reportElement uuid="a8f13cf1-05e2-490f-9123-c2b3a508ac1b" x="0" y="0" width="314" height="17"/>
+				<textElement textAlignment="Left">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Izin Keluar ini diperlukan untuk rekapan dan tanda sedang tidak ikut KBM]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
